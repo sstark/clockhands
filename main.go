@@ -112,6 +112,10 @@ loop:
 			case termbox.KeyEsc:
 				break loop
 			}
+			switch ev.Ch {
+			case 'q':
+				break loop
+			}
 		case termbox.EventInterrupt:
 			drawAll()
 		case termbox.EventResize:
