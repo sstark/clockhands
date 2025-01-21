@@ -28,13 +28,13 @@ func colorToChar(c float64) rune {
 		return '·'
 	}
 	if c < 0.6 {
-		return '*'
+		return ''
 	}
 	if c < 0.85 {
-		return '⁙'
+		return '◍'
 	}
 	if c <= 1 {
-		return '※'
+		return ''
 	}
 	return '-'
 }
